@@ -25,8 +25,6 @@ After the SNP x and the outcome y are generated, then 4 linear regression models
 ## Example 1: Generative a SNP under the additive model
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under an additive model such that mean of Y given x=0,1,2 equals 0.6, 0.7, 0.8, repectively (input:mu0=0.6,mu1=0.7,mu2=0.8).
 
-snpDRAC(n=1000,MAF=0.3,mu0=0.6,mu1=0.7,mu2=0.8)
-
 ```
 library(snpDRAC)
 snpDRAC(n=1000,MAF=0.3,mu0=0.6,mu1=0.7,mu2=0.8)
