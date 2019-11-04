@@ -10,7 +10,7 @@ devtools::install_github("SharonLutz/snpDRAC")
 ```
 
 ## Input
-For n subjects, the SNP x is generated from a binomial distribution with minor allele frequency inputted by the user (input:MAF). The outcome y is generated form a normal distribution with a mean for x=0 (input:mu0), x=1 (input:mu1), x=2 (input:mu2). The user can specify the number of simulations (input: nSim), the significance level (input: alpha), and the seed(input: SEED).
+For n subjects, the SNP x is generated from a binomial distribution with minor allele frequency inputted by the user (input:MAF). The outcome y is generated from a normal distribution with a mean for x=0 (input:mu0), x=1 (input:mu1), x=2 (input:mu2). The user can specify the number of simulations (input: nSim), the significance level (input: alpha), and the seed(input: SEED).
 
 See the manpage for more detail regarding the input of the snpDRAC function.
 
