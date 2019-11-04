@@ -1,0 +1,10 @@
+\name{snpDRAC-package}
+\alias{snpDRAC-package}
+\alias{snpDRAC-pkg}
+\docType{package}
+\title{
+\packageTitle{snpDRAC}
+}
+\description{
+\packageDescription{snpDRAC}
+}
