@@ -22,7 +22,7 @@ library(snpDRAC)
 ## Output
 After the SNP x and the outcome y are generated, then 4 linear regression models are fit: (1) a dominant model for the SNP x, (2) a recessive model for the SNP x, (3) an additive model for the SNP x, and (4) a co-dominant for the SNP x. Then, the empirical power is outputted for all for models (i.e. the proportion of simulations the null hypothesis is rejected at the specified alpha level).
 
-## Example 1: Generative a SNP under the additive model
+### Example 1: Generative a SNP under the additive model
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under an additive model such that mean of Y given x=0,1,2 equals 0.6, 0.7, 0.8, repectively (input:mu0=0.6,mu1=0.7,mu2=0.8).
 
 ```
@@ -37,7 +37,7 @@ The additive model has the most power in this scenario.
 #[1,]    0.456     0.282    0.534      0.424
 ```
 
-## Example 2: Generative a SNP under the dominant model
+### Example 2: Generative a SNP under the dominant model
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under a dominant model such that mean of Y given x=0,1,2 equals 0.7, 0.8, 0.8, repectively (input:mu0=0.7,mu1=0.8,mu2=0.8).
 
 ```
@@ -51,7 +51,7 @@ The dominant model has the most power in this scenario, but the additive model h
 #[1,]    0.339     0.076      0.3      0.259
 ```
 
-## Example 3: Generative a SNP under the recessive model
+### Example 3: Generative a SNP under the recessive model
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under a recessive model such that mean of Y given x=0,1,2 equals 0.7, 0.7, 0.8, repectively (input:mu0=0.7,mu1=0.7,mu2=0.8).
 
 ```
@@ -65,7 +65,7 @@ The recessive model has the most power in this scenario, but the codominant and 
 #[1,]    0.054     0.143    0.086      0.111
 ```
 
-## Example 4: Generative a SNP under the co-dominant model
+### Example 4: Generative a SNP under the co-dominant model
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under a co-dominant model such that mean of Y given x=0,1,2 equals 0.5, 0.7, 0.8, repectively (input:mu0=0.5,mu1=0.7,mu2=0.8).
 ```
 snpDRAC(n=1000,MAF=0.3,mu0=0.5,mu1=0.7,mu2=0.8)
