@@ -41,7 +41,6 @@ The additive model has the most power in this scenario.
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under a dominant model such that mean of Y given x=0,1,2 equals 0.7, 0.8, 0.8, repectively (input:mu0=0.7,mu1=0.8,mu2=0.8).
 
 ```
-library(snpDRAC)
 snpDRAC(n=1000,MAF=0.3,mu0=0.7,mu1=0.8,mu2=0.8)
 ```
 
@@ -56,7 +55,6 @@ The dominant model has the most power in this scenario, but the additive model h
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under a recessive model such that mean of Y given x=0,1,2 equals 0.7, 0.7, 0.8, repectively (input:mu0=0.7,mu1=0.7,mu2=0.8).
 
 ```
-library(snpDRAC)
 snpDRAC(n=1000,MAF=0.3,mu0=0.7,mu1=0.7,mu2=0.8)
 ```
 
@@ -69,12 +67,9 @@ The recessive model has the most power in this scenario, but the codominant and 
 
 ## Example 4: Generative a SNP under the co-dominant model
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under a co-dominant model such that mean of Y given x=0,1,2 equals 0.5, 0.7, 0.8, repectively (input:mu0=0.5,mu1=0.7,mu2=0.8).
-
 ```
-library(snpDRAC)
 snpDRAC(n=1000,MAF=0.3,mu0=0.5,mu1=0.7,mu2=0.8)
 ```
-
 ### Output 4: 
 The additive model has the most power in this scenario.
 ```
