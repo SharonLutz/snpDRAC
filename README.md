@@ -1,5 +1,5 @@
 ## snpDRAC
-Determines the power to detect a genetic association for dominant, recessive, additive, and co-dominant models.
+Examines genetic association for dominant, recessive, additive, and co-dominant models.
 
 
 ## Installation
@@ -20,7 +20,7 @@ library(snpDRAC)
 ```
 
 ## Output
-After the SNP x and the outcome y are generated, then 4 linear regression models are fit: (1) a dominant model for the SNP x, (2) a recessive model for the SNP x, (3) an additive model for the SNP x, and (4) a co-dominant for the SNP x. Then, the empirical power is outputted for all for models (i.e. the proportion of simulations the null hypothesis is rejected at the specified alpha level).
+After the SNP x and the outcome y are generated, then 4 linear regression models are fit: (1) a dominant model for the SNP x, (2) a recessive model for the SNP x, (3) an additive model for the SNP x, and (4) a co-dominant for the SNP x. Outputted for all for models is the proportion of simulations the null hypothesis is rejected at the specified alpha level.
 
 ### Example 1: Generative a SNP under the additive model
 For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequncy of 0.3 (input:MAF=0.3) under an additive model such that mean of Y given x=0,1,2 equals 0.6, 0.7, 0.8, repectively (input:mu0=0.6,mu1=0.7,mu2=0.8).
@@ -31,7 +31,7 @@ snpDRAC(n=1000,MAF=0.3,mu0=0.6,mu1=0.7,mu2=0.8)
 ```
 
 ### Output 1: 
-The additive model has the most power in this scenario.
+The additive model does best in this scenario.
 ```
 #     dominant recessive additive codominant
 #[1,]    0.456     0.282    0.534      0.424
@@ -45,7 +45,7 @@ snpDRAC(n=1000,MAF=0.3,mu0=0.7,mu1=0.8,mu2=0.8)
 ```
 
 ### Output 2: 
-The dominant model has the most power in this scenario, but the additive model has the second highest power.
+The dominant and additive models do best in this scenario.
 ```
 #     dominant recessive additive codominant
 #[1,]    0.339     0.076      0.3      0.259
@@ -59,7 +59,7 @@ snpDRAC(n=1000,MAF=0.3,mu0=0.7,mu1=0.7,mu2=0.8)
 ```
 
 ### Output 3: 
-The recessive model has the most power in this scenario, but the codominant and additive models have the second and third highest power.
+The recessive model does best in this scenario, but the codominant and additive models also do well.
 ```
 #     dominant recessive additive codominant
 #[1,]    0.054     0.143    0.086      0.111
@@ -71,7 +71,7 @@ For 1,000 subjects (input:n=1000), we generate a SNP with a minor allele frequnc
 snpDRAC(n=1000,MAF=0.3,mu0=0.5,mu1=0.7,mu2=0.8)
 ```
 ### Output 4: 
-The additive model has the most power in this scenario.
+The additive model has the most does best in this scenario.
 ```
 #     dominant recessive additive codominant
 #[1,]     0.92     0.472    0.925       0.88
