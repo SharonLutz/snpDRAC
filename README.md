@@ -1,5 +1,5 @@
 ## snpDRAC
-Examines genetic association for dominant, recessive, additive, and co-dominant models.
+Examines genetic associations for dominant, recessive, additive, and co-dominant models.
 
 
 ## Installation
